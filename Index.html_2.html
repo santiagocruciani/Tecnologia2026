@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"> <!-- Codificación UTF-8 para tildes y símbolos [4] -->
+    <title>Mundial 2026 - Fase de Grupos</title>
+    <style>
+        /* Estilos para la presentación y navegación [5, 6] */
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; scroll-behavior: smooth; }
+        nav { background-color: #003366; padding: 10px; position: sticky; top: 0; z-index: 1000; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        nav a:hover { color: #ffcc00; }
+        section { padding: 20px; border-bottom: 1px solid #ccc; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; border: 1px solid black; }
+        th, td { padding: 10px; text-align: left; border: 1px solid black; }
+        .header-table { background-color: #003366; color: white; font-weight: bold; }
+        .inicio-btn { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #003366; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body style="background-color:#f4f9ff;"> <!-- Color de fondo definido en el cuerpo [7] -->
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#grupos">Grupos</a>
+        <a href="#mapa">Sede</a>
+        <a href="#predicciones">Predicciones</a>
+    </nav>
+
+    <section id="inicio">
+        <h1 style="color: #003366; text-align: center;">Mundial 2026 - Fase de Grupos</h1>
+        <div style="text-align: center;">
+            <!-- Imagen con texto alternativo para accesibilidad [8, 9] -->
+            <img src="data:image/jpeg;base64,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" 
+                 alt="Logo oficial Mundial 2026" height="200" width="300">
+        </div>
+    </section>
+
+    <section id="grupos">
+        <h2 style="color: #005580;">Distribución Oficial de Grupos</h2>
+
+        <!-- Grupo A -->
+        <h3>Grupo A</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>México</td><td>CONCACAF</td><td>14</td></tr>
+            <tr><td>Sudáfrica</td><td>CAF</td><td>60</td></tr>
+            <tr><td>República Checa</td><td>UEFA</td><td>40</td></tr>
+            <tr><td>Corea del Sur</td><td>AFC</td><td>25</td></tr>
+        </table>
+
+        <!-- Grupo B -->
+        <h3>Grupo B</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Canadá</td><td>CONCACAF</td><td>30</td></tr>
+            <tr><td>Bosnia y Herz.</td><td>UEFA</td><td>64</td></tr>
+            <tr><td>Catar</td><td>AFC</td><td>56</td></tr>
+            <tr><td>Suiza</td><td>UEFA</td><td>19</td></tr>
+        </table>
+
+        <!-- Grupo C -->
+        <h3>Grupo C</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Brasil</td><td>CONMEBOL</td><td>6</td></tr>
+            <tr><td>Marruecos</td><td>CAF</td><td>7</td></tr>
+            <tr><td>Haití</td><td>CONCACAF</td><td>83</td></tr>
+            <tr><td>Escocia</td><td>UEFA</td><td>42</td></tr>
+        </table>
+
+        <!-- Grupo D -->
+        <h3>Grupo D</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Estados Unidos</td><td>CONCACAF</td><td>17</td></tr>
+            <tr><td>Turquía</td><td>UEFA</td><td>22</td></tr>
+            <tr><td>Paraguay</td><td>CONMEBOL</td><td>41</td></tr>
+            <tr><td>Australia</td><td>AFC</td><td>27</td></tr>
+        </table>
+
+        <!-- Grupo E -->
+        <h3>Grupo E</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Alemania</td><td>UEFA</td><td>10</td></tr>
+            <tr><td>Costa de Marfil</td><td>CAF</td><td>33</td></tr>
+            <tr><td>Ecuador</td><td>CONMEBOL</td><td>23</td></tr>
+            <tr><td>Curazao</td><td>CONCACAF</td><td>82</td></tr>
+        </table>
+
+        <!-- Grupo F -->
+        <h3>Grupo F</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Países Bajos</td><td>UEFA</td><td>8</td></tr>
+            <tr><td>Japón</td><td>AFC</td><td>18</td></tr>
+            <tr><td>Suecia</td><td>UEFA</td><td>38</td></tr>
+            <tr><td>Túnez</td><td>CAF</td><td>45</td></tr>
+        </table>
+
+        <!-- Grupo G -->
+        <h3>Grupo G</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Bélgica</td><td>UEFA</td><td>9</td></tr>
+            <tr><td>Egipto</td><td>CAF</td><td>29</td></tr>
+            <tr><td>Irán</td><td>AFC</td><td>20</td></tr>
+            <tr><td>Nueva Zelanda</td><td>OFC</td><td>85</td></tr>
+        </table>
+
+        <!-- Grupo H -->
+        <h3>Grupo H</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>España</td><td>UEFA</td><td>2</td></tr>
+            <tr><td>Cabo Verde</td><td>CAF</td><td>67</td></tr>
+            <tr><td>Arabia Saudita</td><td>AFC</td><td>61</td></tr>
+            <tr><td>Uruguay</td><td>CONMEBOL</td><td>16</td></tr>
+        </table>
+
+        <!-- Grupo I -->
+        <h3>Grupo I</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Francia</td><td>UEFA</td><td>3</td></tr>
+            <tr><td>Noruega</td><td>UEFA</td><td>31</td></tr>
+            <tr><td>Irak</td><td>AFC</td><td>57</td></tr>
+            <tr><td>Senegal</td><td>CAF</td><td>15</td></tr>
+        </table>
+
+        <!-- Grupo J -->
+        <h3>Grupo J</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Argentina</td><td>CONMEBOL</td><td>1</td></tr>
+            <tr><td>Austria</td><td>UEFA</td><td>24</td></tr>
+            <tr><td>Argelia</td><td>CAF</td><td>28</td></tr>
+            <tr><td>Jordania</td><td>AFC</td><td>63</td></tr>
+        </table>
+
+        <!-- Grupo K -->
+        <h3>Grupo K</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Colombia</td><td>CONMEBOL</td><td>13</td></tr>
+            <tr><td>Portugal</td><td>UEFA</td><td>5</td></tr>
+            <tr><td>Uzbekistán</td><td>AFC</td><td>50</td></tr>
+            <tr><td>R.D. del Congo</td><td>CAF</td><td>46</td></tr>
+        </table>
+
+        <!-- Grupo L -->
+        <h3>Grupo L</h3>
+        <table>
+            <tr class="header-table"><td>Selección</td><td>Confederación</td><td>Ranking FIFA</td></tr>
+            <tr><td>Inglaterra</td><td>UEFA</td><td>4</td></tr>
+            <tr><td>Croacia</td><td>UEFA</td><td>11</td></tr>
+            <tr><td>Panamá</td><td>CONCACAF</td><td>34</td></tr>
+            <tr><td>Ghana</td><td>CAF</td><td>73</td></tr>
+        </table>
+    </section>
+
+    <section id="mapa">
+        <h2 style="color: #005580;">Sede Destacada: Los Ángeles</h2>
+        <!-- Mapa embebido mediante iframe -->
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-118.26%2C33.99%2C-118.23%2C34.01&layer=mapnik" width="600" height="400"></iframe>
+    </section>
+
+    <section id="predicciones">
+        <h2 style="color: #005580;">Predicciones Finales</h2>
+        <p>Dados los grupos, <strong>Argentina</strong> y <strong>Francia</strong> aparecen como favoritos indiscutibles para liderar sus zonas debido a su posición en el Ranking FIFA.</p>
+        <!-- Enlace interno para volver al inicio [10] -->
+        <a href="#inicio" class="inicio-btn">Volver al Inicio</a>
+    </section>
+<footer><style font-family: Arial, sans-serif></style><strong>Santiago Cruciani y Nicolas Pardo </strong></footer>
+</body>
+</html>
